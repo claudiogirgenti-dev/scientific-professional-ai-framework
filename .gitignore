@@ -1,0 +1,9 @@
+# File temporanei e cache locali
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+
+# Ambiente virtuale (gli strumenti inclusi non richiedono dipendenze esterne)
+.venv/
+venv/
