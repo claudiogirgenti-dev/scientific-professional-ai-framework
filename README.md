@@ -75,7 +75,7 @@ L'installazione non sovrascrive file già esistenti per impostazione predefinita
 1. Il progetto inizia dalla comprensione dell'idea e dalla definizione condivisa di obiettivi, risultati attesi e criteri di completamento.
 2. Non iniziare a modificare codice o file del progetto quando requisiti e autorizzazioni non sono sufficientemente chiari.
 3. Gli agenti ricevono il contesto comune; intervengono attivamente solo quando il tema è pertinente al proprio ruolo.
-4. Le analisi degli agenti sono indipendenti e, quando possibile, parallele. Gli agenti non svolgono dibattiti diretti tra loro.
+4. Nelle fasi iniziali di un progetto il Coordinatore consulta tutti gli agenti disponibili; le valutazioni sono indipendenti e, quando possibile, parallele. Negli step successivi seleziona gli agenti pertinenti e motiva le esclusioni non ovvie. Gli agenti non svolgono dibattiti diretti tra loro.
 5. Il Coordinatore controlla ogni contributo prima che venga utilizzato.
 6. Il Sintetizzatore è l'unico agente autorizzato a modificare `PROJECT_SYNTHESIS.md`.
 7. Prima di ogni nuovo step gli agenti leggono `PROJECT_SYNTHESIS.md`; alla fine di ogni step completato il Sintetizzatore lo aggiorna.
@@ -97,7 +97,7 @@ Lo script verifica la presenza dei file, i metadati minimi delle skill e la stru
 
 Le skill sono basate sul formato aperto `SKILL.md` e mantenute in `.agents/skills/`. Le definizioni degli agenti sono adattate separatamente: Markdown per Antigravity e TOML per Codex.
 
-Il framework non può garantire che ogni piattaforma attivi automaticamente tutti gli agenti, esegua processi in parallelo o disponga degli stessi strumenti. Il Coordinatore deve verificare le capacità disponibili e dichiarare eventuali limiti.
+Il framework non può garantire che ogni piattaforma attivi automaticamente tutti gli agenti, esegua processi in parallelo o disponga degli stessi strumenti. Il Coordinatore deve verificare le capacità disponibili, consultare solo gli agenti effettivamente accessibili e dichiarare eventuali limiti o incarichi non eseguibili.
 
 Vedere:
 - `docs/ARCHITETTURA.md`

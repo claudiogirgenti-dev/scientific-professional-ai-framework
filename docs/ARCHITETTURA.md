@@ -32,7 +32,9 @@ Le copie degli adattatori devono essere aggiornate insieme alla definizione cano
 
 ## 5. Regole di collaborazione
 
-Tutti gli agenti devono conoscere la sintesi corrente prima di iniziare un nuovo incarico. Il Coordinatore attiva gli agenti pertinenti; quando sono più di uno, le analisi sono indipendenti e parallele, se la piattaforma lo consente. Non è previsto un dibattito diretto obbligatorio tra agenti.
+Tutti gli agenti devono conoscere la sintesi corrente prima di iniziare un nuovo incarico. All'avvio di un nuovo progetto, nella raccolta iniziale dei requisiti e nella prima pianificazione, il Coordinatore consulta tutti gli agenti disponibili con incarichi distinti e coerenti con i rispettivi ruoli; anche chi non rileva contributi pertinenti lo dichiara brevemente.
+
+Le valutazioni indipendenti vengono avviate in parallelo quando la piattaforma lo consente e non vi sono dipendenze; altrimenti si procede in sequenza mantenendo indipendenti i giudizi e dichiarando il limite. Negli step successivi il Coordinatore seleziona gli agenti pertinenti e motiva le esclusioni non ovvie nel piano o nel rapporto. La consultazione completa si ripete per un nuovo progetto o un cambiamento sostanziale di obiettivi o perimetro. Il Sintetizzatore organizza i contributi dopo il controllo qualità del Coordinatore. Non è previsto un dibattito diretto obbligatorio tra agenti.
 
 Il Coordinatore controlla ogni contributo prima del suo utilizzo. Il Sintetizzatore raccoglie i contributi controllati, espone divergenze e aggiorna la memoria alla fine di ogni step completato.
 

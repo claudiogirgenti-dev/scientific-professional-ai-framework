@@ -22,7 +22,11 @@ Non avviare modifiche del progetto prima che l'utente abbia confermato che la fa
 
 ## Fase 3 — Analisi indipendente
 
-Il Coordinatore seleziona gli agenti pertinenti. Tutti ricevono la memoria aggiornata e lo stesso contesto essenziale. Le analisi avvengono in parallelo e indipendentemente quando possibile. Ciascun agente restituisce:
+Nell'avvio di un nuovo progetto, nella raccolta iniziale dei requisiti e nella prima pianificazione, il Coordinatore consulta tutti gli agenti disponibili almeno una volta, assegnando a ciascuno un incarico coerente con il suo ruolo. Anche un agente che non individua contributi specifici dichiara brevemente che non ha osservazioni pertinenti. Gli agenti diversi dal Coordinatore forniscono valutazioni autonome; il Sintetizzatore prepara la sintesi dopo che il Coordinatore ha controllato i contributi, senza sostituire le valutazioni individuali.
+
+Il Coordinatore avvia le analisi indipendenti in parallelo quando la piattaforma lo consente e non vi sono dipendenze. Se il parallelismo non è disponibile, procede in sequenza senza condividere i giudizi già espressi e dichiara il limite. Non attribuisce a un agente attività non svolte. Per gli step successivi seleziona gli agenti pertinenti al tema e agli obiettivi correnti; indica nel piano o nel rapporto le esclusioni non ovvie, distinguendole dagli agenti non disponibili. Ripete la consultazione completa all'avvio di un nuovo progetto o dopo un cambiamento sostanziale di obiettivi o perimetro.
+
+Ciascun agente incaricato restituisce:
 1. valutazione;
 2. elementi a supporto;
 3. limiti e incertezze;

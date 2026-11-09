@@ -6,8 +6,8 @@ Questo documento riassume le scelte emerse durante la raccolta dei requisiti.
 2. Piattaforme: massima portabilità, con adattatori quando necessari.
 3. Agenti: nove ruoli effettivi; il frazionamento del comando è un protocollo generale.
 4. Skill: universali, condivise e in forma esclusivamente testuale.
-5. Agenti: ricevono il contesto; intervengono quando l'argomento è pertinente al proprio ruolo.
-6. Analisi: indipendenti e parallele quando possibile; niente dibattito diretto obbligatorio tra agenti.
+5. Agenti: nelle fasi iniziali di un nuovo progetto sono consultati tutti almeno una volta con incarichi coerenti al ruolo; negli step successivi vengono selezionati secondo la pertinenza, motivando le esclusioni non ovvie.
+6. Analisi: indipendenti e parallele quando possibile; se il parallelismo non è disponibile si procede in sequenza dichiarando il limite. Niente dibattito diretto obbligatorio tra agenti.
 7. Memoria: `PROJECT_SYNTHESIS.md` in Markdown nella radice di ogni progetto.
 8. Scrittura memoria: solo il Sintetizzatore può modificarla; aggiornamento a fine step.
 9. Archivio analisi: conservare selettivamente contributi importanti, divergenze e criticità.

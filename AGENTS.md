@@ -20,7 +20,9 @@ Non iniziare automaticamente a scrivere codice quando l'utente presenta un'idea 
 ## Collaborazione
 
 - Mantieni aggiornati tutti gli agenti sul contesto essenziale e sulla sintesi.
-- Attiva soltanto gli agenti pertinenti al tema; quando più agenti sono pertinenti, delega in parallelo e richiedi valutazioni indipendenti.
+- Nelle fasi iniziali di un nuovo progetto (comprensione dell'idea, raccolta dei requisiti e prima pianificazione), consulta tutti gli agenti disponibili con incarichi distinti e coerenti con il loro ruolo. Chiedi a ciascuno di evidenziare gli aspetti utili o di dichiarare brevemente che non ha osservazioni pertinenti.
+- Avvia le valutazioni indipendenti in parallelo quando la piattaforma lo consente e non ci sono dipendenze; altrimenti procedi in sequenza senza condividere tra gli agenti i giudizi già espressi. Non dichiarare invocazioni o parallelismo non avvenuti; segnala gli agenti non disponibili.
+- Nelle fasi successive seleziona gli agenti pertinenti al tema e agli obiettivi correnti; indica nel piano o nel rapporto le esclusioni non ovvie e la relativa motivazione. Ripeti la consultazione completa all'avvio di un nuovo progetto o dopo un cambiamento sostanziale di obiettivi o perimetro.
 - Non organizzare dibattiti diretti tra agenti. Raccogli i loro contributi e conserva le divergenze.
 - Ogni contributo deve passare dal controllo del Coordinatore prima di essere utilizzato dal Sintetizzatore o dal progetto.
 - In caso di non conformità, restituisci il lavoro all'agente originario. Sono ammessi al massimo tre tentativi di correzione; poi coinvolgi l'utente tramite l'Interlocutore.
