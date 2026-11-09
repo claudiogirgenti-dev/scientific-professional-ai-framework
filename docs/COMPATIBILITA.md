@@ -37,7 +37,8 @@ Il supporto e il comportamento possono cambiare tra versioni delle piattaforme. 
 
 - Istruzioni comuni: `CLAUDE.md` alla radice; richiama `AGENTS.md`.
 - Subagenti: `.claude/agents/<nome>.md`.
-- Skill: `.claude/skills/<nome-skill>/SKILL.md`.
+- Nel repository del framework, le skill canoniche sono in `.agents/skills/<nome-skill>/SKILL.md`.
+- Nell'installazione per un progetto Claude Code, l'installatore le copia in `.claude/skills/<nome-skill>/SKILL.md`.
 
 Documentazione di riferimento:
 - https://claude.com/blog/steering-claude-code-skills-hooks-rules-subagents-and-more
@@ -47,7 +48,8 @@ Documentazione di riferimento:
 
 - Istruzioni comuni: `.github/copilot-instructions.md`, che richiama `AGENTS.md`.
 - Agenti: `.github/agents/<nome>.agent.md`.
-- Skill: `.github/skills/<nome-skill>/SKILL.md`.
+- Skill: `.agents/skills/<nome-skill>/SKILL.md`, percorso riconosciuto da Copilot.
+- L'installazione selettiva `--platform copilot` usa la posizione nativa `.github/skills/` nel progetto di destinazione.
 
 Documentazione ufficiale:
 - https://docs.github.com/en/copilot/reference/customization-cheat-sheet
@@ -55,4 +57,4 @@ Documentazione ufficiale:
 
 ## Distribuzione
 
-L'installatore supporta `--platform all` (predefinito), `both` (Antigravity e Codex), `antigravity`, `codex`, `claude` e `copilot`. Le skill sono copie identiche della definizione canonica in `.agents/skills/`.
+L'installatore supporta `--platform all` (predefinito), `both` (Antigravity e Codex), `antigravity`, `codex`, `claude` e `copilot`. Il repository del framework mantiene una sola copia canonica per skill in `.agents/skills/`: non aggiungere copie con gli stessi nomi in `.claude/skills/` o `.github/skills/`, perché gli importatori possono rilevarle come duplicati. L'installatore genera la copia nella posizione nativa richiesta nel progetto di destinazione.

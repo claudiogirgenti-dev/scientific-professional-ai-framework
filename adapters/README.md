@@ -16,8 +16,8 @@ Gli adattatori descrivono ruoli e istruzioni, ma la selezione, delega e concorre
 
 ## Claude Code
 
-Agenti in `.claude/agents/`, skill in `.claude/skills/`, istruzioni di progetto in `CLAUDE.md`.
+Agenti in `.claude/agents/`, skill canoniche in `.agents/skills/` (copiate in `.claude/skills/` dal programma di installazione), istruzioni di progetto in `CLAUDE.md`.
 
 ## GitHub Copilot
 
-Agenti in `.github/agents/`, skill in `.github/skills/`, istruzioni in `.github/copilot-instructions.md`.
+Agenti in `.github/agents/`, skill canoniche in `.agents/skills/` (percorso riconosciuto da Copilot), istruzioni in `.github/copilot-instructions.md`.

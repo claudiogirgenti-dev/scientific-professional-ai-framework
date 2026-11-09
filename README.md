@@ -28,14 +28,14 @@ scientific-professional-ai-framework/
 │   └── skills/                    # Skill Agent Skills, condivise
 ├── .codex/agents/                 # Agenti Codex in TOML
 ├── .claude/agents/                # Subagenti Claude Code in Markdown
-├── .claude/skills/                # Copie native skill per Claude Code
 ├── .github/agents/                # Agenti GitHub Copilot
-├── .github/skills/                # Copie native skill per Copilot
 ├── agents/                        # Definizioni canoniche degli agenti
 ├── docs/                          # Architettura, governance, installazione
 ├── templates/PROJECT_SYNTHESIS.md # Modello della memoria di progetto
 └── tools/                         # Installatore e validatore del repository
 ```
+
+Nel repository del framework le skill sono mantenute una sola volta in `.agents/skills/`, percorso condiviso da Antigravity, Codex e GitHub Copilot. L'installatore le copia nella posizione nativa della piattaforma scelta nel progetto di destinazione.
 
 ## Installazione rapida
 
@@ -95,7 +95,7 @@ Lo script verifica la presenza dei file, i metadati minimi delle skill e la stru
 
 ## Compatibilità e limiti
 
-Le skill sono basate sul formato aperto `SKILL.md` e collocate in `.agents/skills/`, percorso riconosciuto da Antigravity, Codex, Claude Code e GitHub Copilot. Le definizioni degli agenti sono adattate separatamente: Markdown per Antigravity e TOML per Codex.
+Le skill sono basate sul formato aperto `SKILL.md` e mantenute in `.agents/skills/`. Le definizioni degli agenti sono adattate separatamente: Markdown per Antigravity e TOML per Codex.
 
 Il framework non può garantire che ogni piattaforma attivi automaticamente tutti gli agenti, esegua processi in parallelo o disponga degli stessi strumenti. Il Coordinatore deve verificare le capacità disponibili e dichiarare eventuali limiti.
 

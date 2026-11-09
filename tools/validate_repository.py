@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Controlli strutturali locali del repository; usa solo la libreria standard."""
 from pathlib import Path
+import re
 import sys
 try:
     import tomllib
@@ -34,6 +35,26 @@ for name in AGENTS:
             errors.append(f"TOML non valido {codex.relative_to(ROOT)}: {exc}")
 
 skills_dir = ROOT / ".agents" / "skills"
+skill_locations = {}
+for rel_root in (".agents/skills", ".claude/skills", ".github/skills"):
+    skill_root = ROOT / rel_root
+    if not skill_root.is_dir():
+        continue
+    for folder in sorted(p for p in skill_root.iterdir() if p.is_dir()):
+        skill_file = folder / "SKILL.md"
+        if not skill_file.is_file():
+            continue
+        content = skill_file.read_text(encoding="utf-8")
+        match = re.search(r"(?m)^name:\s*([^\s#]+)\s*(?:#.*)?$", content[:500])
+        if match:
+            skill_locations.setdefault(match.group(1), []).append(
+                skill_file.relative_to(ROOT).as_posix()
+            )
+
+for name, locations in sorted(skill_locations.items()):
+    if len(locations) > 1:
+        errors.append(f"Skill duplicata '{name}': " + ", ".join(locations))
+
 for folder in sorted(p for p in skills_dir.iterdir() if p.is_dir()):
     skill_file = folder / "SKILL.md"
     if not skill_file.is_file():
@@ -55,17 +76,6 @@ if errors:
     raise SystemExit(1)
 
 print(f"VALIDAZIONE OK: {len(AGENTS)} agenti e {len(list(skills_dir.iterdir()))} skill rilevati.")
-for skill_dir in sorted(p for p in skills_dir.iterdir() if p.is_dir()):
-    for mirror_root in (ROOT / ".claude" / "skills", ROOT / ".github" / "skills"):
-        mirror = mirror_root / skill_dir.name / "SKILL.md"
-        if not mirror.is_file():
-            errors.append(f"Copia skill adattatore mancante: {mirror.relative_to(ROOT)}")
-
-if errors:
-    print("VALIDAZIONE FALLITA")
-    for error in errors:
-        print("- " + error)
-    raise SystemExit(1)
 
 if not tomllib:
     print("ATTENZIONE: Python < 3.11; controllo sintattico TOML non eseguito.")
